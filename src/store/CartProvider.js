@@ -9,7 +9,7 @@ const cartReducer = (state, action) => {
     switch (action.type) {
         case 'ADD': {
             const updatedItems = state.items.concat(action.item);
-            const updatedTotalAmount = state.totalAmount + action.tem.amount * action.item.price;
+            const updatedTotalAmount = state.totalAmount + action.item.amount * action.item.price;
             return {
                 items: updatedItems,
                 totalAmount: updatedTotalAmount
